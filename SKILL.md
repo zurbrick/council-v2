@@ -78,7 +78,7 @@ The v2 protocol is intentionally narrow:
 4. **Conditional votes count as half.** `approve_with_conditions = 0.5`.
 5. **Anti-consensus check on unanimous outcomes.** Strongest serious counterargument must be surfaced.
 6. **Raw outputs shown on Full Council.** Operator sees source verdicts, not just the summary.
-7. **Synthesizer does not vote on Full Council.** It narrates the mechanical result.
+7. **All reviewers vote (including Opus).** Synthesis is done by `synthesize.py` (script), not a model. Orchestrator writes the narrative but cannot change the verdict.
 8. **Minority reports are always preserved.** Strongest dissent is never buried.
 
 See `references/synthesis-rules.md` for examples and edge cases.
