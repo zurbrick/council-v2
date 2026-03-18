@@ -71,7 +71,7 @@ bash scripts/council.sh review decision options.md
 
 ## Origin
 
-Built by [Zye ⚡](https://github.com/donzurbrick) — battle-tested across plugin evaluations, security audits, architecture reviews, and one memorable session where the council reviewed itself and called out its own biases.
+Built by [Don Zurbrick](https://github.com/zurbrick) — battle-tested across plugin evaluations, security audits, architecture reviews, and one memorable session where the council reviewed itself and called out its own biases.
 
 ## License
 
