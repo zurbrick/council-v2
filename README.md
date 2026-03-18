@@ -40,6 +40,27 @@ bash scripts/council.sh review architecture design.md
 bash scripts/council.sh review decision options.md
 ```
 
+## Model Access
+
+The council's strength comes from **model diversity** — different providers catch different blind spots. You have two options:
+
+### Option A: OpenRouter (recommended for most users)
+One API key, all 5 models. Sign up at [openrouter.ai](https://openrouter.ai).
+
+```json5
+// openclaw.json — models.providers
+"openrouter": {
+  "baseUrl": "https://openrouter.ai/api/v1",
+  "apiKey": "${OPENROUTER_API_KEY}",
+  "api": "openai-completions"
+}
+```
+
+Then reference models as `openrouter/anthropic/claude-opus-4`, `openrouter/openai/gpt-5.4`, `openrouter/x-ai/grok-4`, `openrouter/deepseek/deepseek-r1`, `openrouter/google/gemini-3.1-pro`.
+
+### Option B: Direct provider subscriptions
+If you have separate subscriptions (Anthropic, OpenAI, xAI, etc.), configure each provider individually. See [OpenClaw model docs](https://docs.openclaw.ai/concepts/models).
+
 ## Council Tiers
 
 ### Standard (3 reviewers)
@@ -57,6 +78,8 @@ bash scripts/council.sh review decision options.md
 | Security & Risk | Grok 4 | xAI |
 | First Principles | DeepSeek R1 | DeepSeek |
 | Structural Verifier | Gemini 3.1 Pro | Google |
+
+> **Tip:** The specific models matter less than the diversity. What you want is different providers with different training data and different biases reviewing the same decision. Swap in whatever top-tier models you have access to.
 
 ## Synthesis Rules (v2 Protocol)
 
