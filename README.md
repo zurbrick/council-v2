@@ -21,7 +21,7 @@ clawhub install council-v2
 
 Or manually:
 ```bash
-git clone https://github.com/donzurbrick/council-v2.git ~/.openclaw/workspace/skills/council-v2
+git clone https://github.com/zurbrick/council-v2.git ~/.openclaw/workspace/skills/council-v2
 ```
 
 ## Quick Start
